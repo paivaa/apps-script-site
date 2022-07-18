@@ -1,0 +1,407 @@
+<script>
+ 
+  document.addEventListener('DOMContentLoaded', function() {
+    var datePicker = document.getElementById('data_emissao');
+    M.Datepicker.init(datePicker,{ format: 'dd/mm/yyyy', autoClose: true, i18n: { 
+    months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+    monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    weekdays: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabádo'],
+    weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+    today: 'Hoje',
+    clear: 'Limpar',
+    cancel: 'Sair',
+    done: 'Confirmar',
+    labelMonthNext: 'Próximo mês',
+    labelMonthPrev: 'Mês anterior',
+    labelMonthSelect: 'Selecione um mês',
+    labelYearSelect: 'Selecione um ano',
+    selectMonths: true,
+    selectYears: 15,
+    },container: 'body', minDate: new Date()});
+    
+    var datePicker1 = document.getElementById('data_item_um');
+    M.Datepicker.init(datePicker1,{ format: 'dd/mm/yyyy', autoClose: true, i18n: { 
+    months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+    monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    weekdays: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabádo'],
+    weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+    today: 'Hoje',
+    clear: 'Limpar',
+    cancel: 'Sair',
+    done: 'Confirmar',
+    labelMonthNext: 'Próximo mês',
+    labelMonthPrev: 'Mês anterior',
+    labelMonthSelect: 'Selecione um mês',
+    labelYearSelect: 'Selecione um ano',
+    selectMonths: true,
+    selectYears: 15,
+    },container: 'body'});
+    
+    var datePicker2 = document.getElementById('data_item_dois');
+    M.Datepicker.init(datePicker2,{ format: 'dd/mm/yyyy', autoClose: true, i18n: { 
+    months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+    monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    weekdays: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabádo'],
+    weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+    today: 'Hoje',
+    clear: 'Limpar',
+    cancel: 'Sair',
+    done: 'Confirmar',
+    labelMonthNext: 'Próximo mês',
+    labelMonthPrev: 'Mês anterior',
+    labelMonthSelect: 'Selecione um mês',
+    labelYearSelect: 'Selecione um ano',
+    selectMonths: true,
+    selectYears: 15,
+    },container: 'body'});
+    
+    var datePicker3 = document.getElementById('data_item_tres');
+    M.Datepicker.init(datePicker3,{ format: 'dd/mm/yyyy', autoClose: true, i18n: { 
+    months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+    monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    weekdays: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabádo'],
+    weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+    today: 'Hoje',
+    clear: 'Limpar',
+    cancel: 'Sair',
+    done: 'Confirmar',
+    labelMonthNext: 'Próximo mês',
+    labelMonthPrev: 'Mês anterior',
+    labelMonthSelect: 'Selecione um mês',
+    labelYearSelect: 'Selecione um ano',
+    selectMonths: true,
+    selectYears: 15,
+    },container: 'body'});
+    
+    var datePicker4 = document.getElementById('data_item_quatro');
+    M.Datepicker.init(datePicker4,{ format: 'dd/mm/yyyy', autoClose: true, i18n: { 
+    months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+    monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    weekdays: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabádo'],
+    weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+    today: 'Hoje',
+    clear: 'Limpar',
+    cancel: 'Sair',
+    done: 'Confirmar',
+    labelMonthNext: 'Próximo mês',
+    labelMonthPrev: 'Mês anterior',
+    labelMonthSelect: 'Selecione um mês',
+    labelYearSelect: 'Selecione um ano',
+    selectMonths: true,
+    selectYears: 15,
+    },container: 'body'});
+    
+    var datePicker5 = document.getElementById('data_item_cinco');
+    M.Datepicker.init(datePicker5,{ format: 'dd/mm/yyyy', autoClose: true, i18n: { 
+    months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+    monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    weekdays: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabádo'],
+    weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+    today: 'Hoje',
+    clear: 'Limpar',
+    cancel: 'Sair',
+    done: 'Confirmar',
+    labelMonthNext: 'Próximo mês',
+    labelMonthPrev: 'Mês anterior',
+    labelMonthSelect: 'Selecione um mês',
+    labelYearSelect: 'Selecione um ano',
+    selectMonths: true,
+    selectYears: 15,
+    },container: 'body'});
+    
+    var datePicker6 = document.getElementById('data_item_seis');
+    M.Datepicker.init(datePicker6,{ format: 'dd/mm/yyyy', autoClose: true, i18n: { 
+    months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+    monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    weekdays: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabádo'],
+    weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+    today: 'Hoje',
+    clear: 'Limpar',
+    cancel: 'Sair',
+    done: 'Confirmar',
+    labelMonthNext: 'Próximo mês',
+    labelMonthPrev: 'Mês anterior',
+    labelMonthSelect: 'Selecione um mês',
+    labelYearSelect: 'Selecione um ano',
+    selectMonths: true,
+    selectYears: 15,
+    },container: 'body'});
+   
+   document.getElementById("app").addEventListener("click", clickEventHandler);
+   document.getElementById("btnAdd").addEventListener("click", addRegistro);
+   
+   document.getElementById("valorItem_um").addEventListener("input", getValorMoeda);
+   document.getElementById("valorItem_dois").addEventListener("input", getValorMoeda2);
+   document.getElementById("valorItem_tres").addEventListener("input", getValorMoeda3);
+   document.getElementById("valorItem_quatro").addEventListener("input", getValorMoeda4);
+   document.getElementById("valorItem_cinco").addEventListener("input", getValorMoeda5);
+   document.getElementById("valorItem_seis").addEventListener("input", getValorMoeda6);
+   
+    document.getElementById("id_reembolso").value = Math.floor(Math.random() * 1000);
+    loadingEnd();
+} );
+    
+    function onFailure(error){
+          document.getElementById("message_error").innerHTML = "ERROR: "+ error.message;
+      }
+
+      function addRegistro(){
+        var registroInfo = {};
+        
+        registroInfo.id_reembolso = document.getElementById("id_reembolso").value;
+        registroInfo.data_emissao = document.getElementById("data_emissao").value;
+        registroInfo.nome = document.getElementById("nome").value;
+        registroInfo.departamento = document.getElementById("departamento").value;
+        
+        registroInfo.pagamento = document.getElementById("pagamento").value;
+        registroInfo.favorecido = document.getElementById("favorecido").value;
+        registroInfo.cpf_cnpj = document.getElementById("cpf_cnpj").value;
+        registroInfo.banco = document.getElementById("banco").value;
+        registroInfo.agencia = document.getElementById("agencia").value;
+        registroInfo.conta_corrente = document.getElementById("conta_corrente").value;
+        registroInfo.pix = document.getElementById("pix").value;
+        
+        registroInfo.item_um = document.getElementById("item_um").value;
+        registroInfo.data_item_um = document.getElementById("data_item_um").value;
+        registroInfo.valorItem_um = document.getElementById("valorItem_um").value;
+        
+        registroInfo.item_dois = document.getElementById("item_dois").value;
+        registroInfo.data_item_dois = document.getElementById("data_item_dois").value;
+        registroInfo.valorItem_dois = document.getElementById("valorItem_dois").value;
+        
+        registroInfo.item_tres = document.getElementById("item_tres").value;
+        registroInfo.data_item_tres = document.getElementById("data_item_tres").value;
+        registroInfo.valorItem_tres = document.getElementById("valorItem_tres").value;
+        
+        registroInfo.item_quatro = document.getElementById("item_quatro").value;
+        registroInfo.data_item_quatro = document.getElementById("data_item_quatro").value;
+        registroInfo.valorItem_quatro = document.getElementById("valorItem_quatro").value;
+        
+        registroInfo.item_cinco = document.getElementById("item_cinco").value;
+        registroInfo.data_item_cinco = document.getElementById("data_item_cinco").value;
+        registroInfo.valorItem_cinco = document.getElementById("valorItem_cinco").value;
+        
+        registroInfo.item_seis = document.getElementById("item_seis").value;
+        registroInfo.data_item_seis = document.getElementById("data_item_seis").value;
+        registroInfo.valorItem_seis = document.getElementById("valorItem_seis").value;
+        
+        registroInfo.justificativa = document.getElementById("justificativa").value;
+        registroInfo.email_gestor = document.getElementById("email_gestor").value;
+        
+       if(registroInfo.nome !=="" && registroInfo.departamento !=="" && registroInfo.data_emissao !=="" && registroInfo.email_gestor !=="" && registroInfo.cpf_cnpj !==""){
+        google.script.run.withFailureHandler(onFailure).criarArquivoReembolso(registroInfo);
+        document.getElementById("id_reembolso").value =""; document.getElementById("data_emissao").value =""; document.getElementById("nome").value =""; document.getElementById("departamento").value ="";
+        document.getElementById("pagamento").value =""; document.getElementById("banco").value =""; document.getElementById("agencia").value =""; document.getElementById("conta_corrente").value = "";
+        document.getElementById("pix").value =""; document.getElementById("item_um").value =""; document.getElementById("data_item_um").value =""; document.getElementById("valorItem_um").value ="";
+        document.getElementById("item_dois").value =""; document.getElementById("data_item_dois").value =""; document.getElementById("valorItem_dois").value ="";
+        document.getElementById("item_tres").value = ""; document.getElementById("data_item_tres").value =""; document.getElementById("valorItem_tres").value ="";
+        document.getElementById("item_quatro").value = ""; document.getElementById("data_item_quatro").value =""; document.getElementById("valorItem_quatro").value ="";
+        document.getElementById("item_cinco").value = ""; document.getElementById("data_item_cinco").value; document.getElementById("valorItem_cinco").value ="";
+        document.getElementById("item_seis").value = ""; document.getElementById("data_item_seis").value; document.getElementById("valorItem_seis").value =""; 
+        document.getElementById("favorecido").value =""; document.getElementById("cpf_cnpj").value =""; document.getElementById("email_gestor").value ="";
+        
+        M.toast({html: 'Adicionado com sucesso!',classes: 'rounded', displayLength: 2000});
+        loadingStart();
+        setTimeout(() => {
+                window.open('https://script.google.com/a/consultoriahealthcare.com/macros/s/AKfycbxP7JvllzHIoAqni4DY0NMAPQSqfQq1tycN6QT_QIEMgb2cETdc/exec', '_top');
+        }, 3000) 
+      }else {
+       M.toast({html: 'Atenção! Campos em branco',classes: 'rounded', displayLength: 2000});
+      }
+     
+     }
+   
+   function clickEventHandler(e){
+      if(e.target.matches(".info-button")){
+        displayInputsInfo(e);
+      }
+   }
+   
+   function displayInputsInfo(e){
+    if(e.target.dataset.buttonState === "nowHide"){
+     document.getElementById("moreItem").classList.remove('hide');
+     e.target.textContent = "Cancelar";
+     e.target.dataset.buttonState = "nowUnhide";
+    } else {
+     document.getElementById("moreItem").classList.add('hide');
+     e.target.textContent = "Adicionar mais info...";
+     e.target.dataset.buttonState = "nowHide"; 
+    }
+   }
+  
+ function getValorMoeda(){
+        var elemento = document.getElementById('valorItem_um');
+
+        if(elemento !== ""){
+        var valor = elemento.value;
+
+        valor = valor + '';
+        valor = parseInt(valor.replace(/[\D]+/g, ''));
+        valor = valor + '';
+        valor = valor.replace(/([0-9]{2})$/g, ".$1");
+
+        if (valor.length > 6) {
+            valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1.$2");
+        }
+        if (valor.length > 10) {
+            valor = valor.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        }
+
+        elemento.value = valor;
+        if(valor == 'NaN'){ 
+        elemento.value = '';
+        }
+        
+        return document.getElementById("valorItem_um").value = elemento.value;
+      }
+    }
+    
+    function getValorMoeda2(){
+        var elemento = document.getElementById('valorItem_dois');
+        if(elemento !== ""){
+        var valor = elemento.value;
+
+        valor = valor + '';
+        valor = parseInt(valor.replace(/[\D]+/g, ''));
+        valor = valor + '';
+        valor = valor.replace(/([0-9]{2})$/g, ".$1");
+
+        if (valor.length > 6) {
+            valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1.$2");
+        }
+        
+        if (valor.length > 10) {
+            valor = valor.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        }
+
+        elemento.value = valor;
+        if(valor == 'NaN'){ 
+        elemento.value = '';
+        }
+        
+        return document.getElementById("valorItem_dois").value = elemento.value;
+      }
+    }
+    
+    function getValorMoeda3(){
+        var elemento = document.getElementById('valorItem_tres');
+        if(elemento !== ""){
+        var valor = elemento.value;
+
+        valor = valor + '';
+        valor = parseInt(valor.replace(/[\D]+/g, ''));
+        valor = valor + '';
+        valor = valor.replace(/([0-9]{2})$/g, ".$1");
+
+        if (valor.length > 6) {
+            valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1.$2");
+        }
+        
+        if (valor.length > 10) {
+            valor = valor.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        }
+
+        elemento.value = valor;
+        if(valor == 'NaN'){ 
+        elemento.value = '';
+        }
+        
+        return document.getElementById("valorItem_tres").value = elemento.value;
+      }
+    }
+    
+    function getValorMoeda4(){
+        var elemento = document.getElementById('valorItem_quatro');
+        if(elemento !== ""){
+        var valor = elemento.value;
+
+        valor = valor + '';
+        valor = parseInt(valor.replace(/[\D]+/g, ''));
+        valor = valor + '';
+        valor = valor.replace(/([0-9]{2})$/g, ".$1");
+
+        if (valor.length > 6) {
+            valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1.$2");
+        }
+        
+        if (valor.length > 10) {
+            valor = valor.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        }
+
+        elemento.value = valor;
+        if(valor == 'NaN'){ 
+        elemento.value = '';
+        }
+        
+        return document.getElementById("valorItem_quatro").value = elemento.value;
+      }
+  }
+  function getValorMoeda5(){
+        var elemento = document.getElementById('valorItem_cinco');
+        if(elemento !== ""){
+        var valor = elemento.value;
+
+        valor = valor + '';
+        valor = parseInt(valor.replace(/[\D]+/g, ''));
+        valor = valor + '';
+        valor = valor.replace(/([0-9]{2})$/g, ".$1");
+
+        if (valor.length > 6) {
+            valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1.$2");
+        }
+        
+        if (valor.length > 10) {
+            valor = valor.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        }
+
+        elemento.value = valor;
+        if(valor == 'NaN'){ 
+        elemento.value = '';
+        }
+        
+        return document.getElementById("valorItem_cinco").value = elemento.value;
+      }
+  }
+  function getValorMoeda6(){
+        var elemento = document.getElementById('valorItem_seis');
+        if(elemento !== ""){
+        var valor = elemento.value;
+
+        valor = valor + '';
+        valor = parseInt(valor.replace(/[\D]+/g, ''));
+        valor = valor + '';
+        valor = valor.replace(/([0-9]{2})$/g, ".$1");
+
+        if (valor.length > 6) {
+            valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1.$2");
+        }
+        
+        if (valor.length > 10) {
+            valor = valor.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        }
+
+        elemento.value = valor;
+        if(valor == 'NaN'){ 
+        elemento.value = '';
+        }
+        
+        return document.getElementById("valorItem_seis").value = elemento.value;
+      }
+  }
+ 
+  
+   function loadingStart(){
+      document.getElementById("loading").className = "valign-wrapper center-align";
+   }
+   function loadingEnd(){
+      document.getElementById("loading").className = "valign-wrapper center-align hide";
+   }
+  
+</script>
