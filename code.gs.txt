@@ -1,3 +1,4 @@
+//Arquivo .gs (google script) para renderização de uma (ou mais páginas web)
 var Route = {};
 Route.path = function(route, callback){
     Route[route] = callback;
