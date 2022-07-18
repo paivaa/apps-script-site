@@ -1,0 +1,295 @@
+<!-- Exemplo de página HTML que roda em ambiente Apps script, consigo implementar js/css, inclusive utilizando frameworks via CDN -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <?!= include("css-primeira"); ?>
+</head>
+
+<body>
+
+  <div id="loading" class="valign-wrapper center-align">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-green-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div>
+        <a href="/" id="btnVoltar" class="waves-effect waves-light btn-small green lighten-2"><i class="material-icons left">home</i>Home</a>
+      </div>
+      <div>
+        <h3 class="center-align">REEMBOLSO DE DESPESAS</h3>
+      </div>
+    </div> <!-- CLOSE ROW -->
+
+    <div class="row">
+
+      <fieldset>
+        <legend>Informações</legend>
+        <div class="input-field col s1" style="white-space:nowrap">
+          <span>Nº reembolso: </span>
+          <input type="text" id="id_reembolso" style="text-align:center;" readonly>
+        </div>
+
+        <div class="input-field col s3 offset-s2">
+          <i class="material-icons prefix">date_range</i>
+          <input id ="data_emissao" type="text" class="datepicker" required>
+          <label for="data_emissao">Data de hoje:</label>
+        </div>
+
+        <div class="input-field col s3">
+          <i class="material-icons prefix">person_outline</i>
+          <input type="text" id="nome" class="validate" required>
+          <label for="nome" title="Nome do Solicitante">Nome:</label>
+        </div>
+
+        <div class="input-field col s3">
+          <i class="material-icons prefix">person_outline</i>
+          <input type="text" id="departamento" class="validate" required>
+          <label for="departamento" title="Departamento">Departamento:</label>
+        </div>
+
+      </fieldset>
+    </div> <!-- CLOSE ROW -->
+
+    <div class="row">
+
+      <fieldset>
+        <legend>PAGAMENTO</legend>
+        
+        <div class="input-field col s4 offset-s1">
+          <i class="material-icons prefix">person_outline</i>
+          <input type="text" id="favorecido" class="validate">
+          <label for="favorecido" title="Nome do Favorecido">Favorecido:</label>
+        </div>
+       
+        <div class="input-field col s4 offset-s2">
+           <i class="material-icons prefix">label</i>
+           <input id ="cpf_cnpj" type="text" class="validate" required>
+           <label for="cpf_cnpj" title="cpf ou cnpj do favorecido">CPF/CNPJ:</label>
+        </div>
+        
+        <div class="input-field col s4 offset-s1">
+          <i class="material-icons prefix">payment</i>
+          <input type="text" id="pagamento" class="validate" required>
+          <label for="pagamento" title="Forma de Pagamento">Forma de Pagamento:</label>
+        </div>
+
+        <div class="input-field col s4 offset-s2">
+          <i class="material-icons prefix">account_balance</i>
+          <input id ="banco" type="text" class="validate" required>
+          <label for="banco" title="Nome do banco">Banco:</label>
+        </div>
+
+        <div class="input-field col s4 offset-s1">
+          <i class="material-icons prefix">label</i>
+          <input type="text" id="agencia" class="validate" required>
+          <label for="agencia" title="Nº da agência bancária">Agência:</label>
+        </div>
+
+        <div class="input-field col s4 offset-s2">
+          <i class="material-icons prefix">label</i>
+          <input id ="conta_corrente" type="text" class="validate" required>
+          <label for="conta_corrente" title="Nº Conta Corrente">Conta Corrente:</label>
+        </div>
+
+        <div class="input-field col s4 offset-s4">
+          <i class="material-icons prefix">vpn_key</i>
+          <input id ="pix" type="text" class="validate" required>
+          <label for="pix" title="Chave Pix">Chave Pix:</label>
+        </div>
+
+      </fieldset>
+    </div> <!-- CLOSE ROW -->
+
+      <div class="row">
+
+        <fieldset>
+          <legend>ITEM</legend>
+          <div class="input-field col s5 offset-s1" style="white-space:nowrap">
+            <span>1- </span>
+            <input id="item_um" type="text" class="validate">
+          </div>
+
+          <div class="input-field col s2 offset-s1">
+            <i class="material-icons prefix">date_range</i>
+            <input id ="data_item_um" type="text" class="datepicker">
+            <label for="data_item_um" title="Data item 1">Data:</label>
+          </div>
+
+          <div class="input-field col s2 offset-s1" style="white-space:nowrap">
+            <span>R$: </span>
+            <input id="valorItem_um" type="text" class="validate" placeholder="40.00">
+            <label for="valorItem_um">Total:</label>
+          </div>
+
+          <div class="input-field col s5 offset-s1" style="white-space:nowrap">
+            <span>2- </span>
+            <input id="item_dois" type="text" class="validate">
+          </div>
+
+          <div class="input-field col s2 offset-s1">
+            <i class="material-icons prefix">date_range</i>
+            <input id ="data_item_dois" type="text" class="datepicker">
+            <label for="data_item_dois" title="Data item 2">Data:</label>
+          </div>
+
+          <div class="input-field col s2 offset-s1" style="white-space:nowrap">
+            <span>R$: </span>
+            <input id="valorItem_dois" type="text" class="validate" placeholder="40.00">
+            <label for="valorItem_dois">Total:</label>
+          </div>
+
+          <div class="input-field col s5 offset-s1" style="white-space:nowrap">
+            <span>3- </span>
+            <input id="item_tres" type="text" class="validate">
+          </div>
+
+          <div class="input-field col s2 offset-s1">
+            <i class="material-icons prefix">date_range</i>
+            <input id ="data_item_tres" type="text" class="datepicker">
+            <label for="data_item_tres" title="Data item 3">Data:</label>
+          </div>
+
+          <div class="input-field col s2  offset-s1" style="white-space:nowrap">
+            <span>R$: </span>
+            <input id="valorItem_tres" type="text" class="validate" placeholder="40.00">
+            <label for="valorItem_tres">Total:</label>
+          </div>
+
+        </fieldset>
+      </div> <!-- CLOSE ROW -->
+
+      <div class="row hide" id="moreItem">
+
+        <fieldset>
+          <legend>+ITENS</legend>
+          <div class="input-field col s5 offset-s1" style="white-space:nowrap">
+            <span>4- </span>
+            <input id="item_quatro" type="text" class="validate">
+          </div>
+
+          <div class="input-field col s2 offset-s1">
+            <i class="material-icons prefix">date_range</i>
+            <input id ="data_item_quatro" type="text" class="datepicker">
+            <label for="data_item_quatro" title="Data item 4">Data:</label>
+          </div>
+
+          <div class="input-field col s2  offset-s1" style="white-space:nowrap">
+            <span>R$: </span>
+            <input id="valorItem_quatro" type="text" class="validate" placeholder="40.00">
+            <label for="valorItem_quatro">Total:</label>
+          </div>
+
+          <div class="input-field col s5 offset-s1" style="white-space:nowrap">
+            <span>5- </span>
+            <input id="item_cinco" type="text" class="validate">
+          </div>
+
+          <div class="input-field col s2 offset-s1">
+            <i class="material-icons prefix">date_range</i>
+            <input id ="data_item_cinco" type="text" class="datepicker">
+            <label for="data_item_cinco" title="Data item 5">Data:</label>
+          </div>
+
+          <div class="input-field col s2  offset-s1" style="white-space:nowrap">
+            <span>R$: </span>
+            <input id="valorItem_cinco" type="text" class="validate" placeholder="40.00">
+            <label for="valorItem_cinco">Total:</label>
+          </div>
+
+          <div class="input-field col s5 offset-s1" style="white-space:nowrap">
+            <span>6- </span>
+            <input id="item_seis" type="text" class="validate">
+          </div>
+
+          <div class="input-field col s2 offset-s1">
+            <i class="material-icons prefix">date_range</i>
+            <input id ="data_item_seis" type="text" class="datepicker">
+            <label for="data_item_seis" title="Data item 6">Data:</label>
+          </div>
+
+          <div class="input-field col s2  offset-s1" style="white-space:nowrap">
+            <span>R$: </span>
+            <input id="valorItem_seis" type="text" class="validate" placeholder="40.00">
+            <label for="valorItem_seis">Total:</label>
+          </div>
+
+        </fieldset>
+
+      </div> <!-- CLOSE ROW -->
+      
+      <div class="row" id="app">
+        <button class="waves-effect waves-light btn-small info-button" style="display:inline" data-button-state="nowHide">Adicionar mais itens...</button>
+       </div>
+       
+      <div class="row">
+
+        <fieldset>
+          <legend>Justificativa</legend>
+
+          <div class="input-field col s8 offset-s2">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea  id="justificativa" class="materialize-textarea" required></textarea>
+          </div>
+
+        </fieldset>
+      </div> <!-- CLOSE ROW -->
+      
+      <div class="row">
+
+        <fieldset>
+          <legend>GESTOR</legend>
+
+          <div class="input-field col s6  offset-s3" style="white-space:nowrap">
+            <span>Email: </span>
+            <input id="email_gestor" type="email" class="validate" placeholder="Digite email do seus gestor" required>
+          </div>
+
+        </fieldset>
+      </div> <!-- CLOSE ROW -->
+      
+      <div class="row">
+
+        <fieldset>
+          <legend>Upload - notas fiscais</legend>
+          
+          <div class="col s12" style="text-align:center">
+            <p>DEIXE TODO RECIBO/NOTA FISCAL REFERENTE AO REEMBOLSO NA <b style="color: red">PASTA _TMP(CLICAR NO BOTÃO UPLOAD)</b>, APÓS ISSO VOCÊ PODE APERTAR EM <b style="color: green">ENVIAR</b></p>
+          </div>
+          
+          <div class="col s3 offset-s5">
+          <a target="_blank" href="/" class="waves-effect waves-light btn-small green lighten-2"><i class="material-icons left">cloud_upload</i>Upload...</a>
+          </div>
+          
+        </fieldset>
+      </div> <!-- CLOSE ROW -->
+
+        <div class="row">
+          <button id="btnAdd" class="waves-effect waves-light btn-large green lighten-2"><i class="material-icons left">chevron_right</i>Enviar</button>
+          <span id="message_error"></span>
+        </div> <!-- CLOSE ROW -->
+
+    </div> <!-- CLOSE CONTAINER -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <?!= include("js-primeira"); ?>
+</body>
+
+</html>
