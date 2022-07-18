@@ -4,9 +4,7 @@ function include(filename){
 }
 
 function render(file,argsObject){
-    var userEmail = Session.getActiveUser().getEmail();
     var tmp = HtmlService.createTemplateFromFile(file);
-    tmp.email = userEmail; 
   if(argsObject){
     var keys = Object.keys(argsObject);
     
